@@ -22,6 +22,12 @@
             max-width: fit-content;
             max-height: fit-content;
         }
+        warning{
+            color:yellow;
+        }
+        to_solve_warning{
+            color:green;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +101,25 @@
    <code>sudo apt install python pip3</code>
    <h5>三.安装 jetson-stats</h5>
    <code>sudo pip3 install jetson-stats</code>
+  <br> 他给我们报了一个 warning<br> 
+   <warning>WARNING: Running pip as the 'root' user can result in broken permissions and con flicting behaviour with the system package manager. Itis recommended to use av irtual environment instead: https://pip.pypa.io/warnings/venv</warning>
+   <br>
+   <to_solve_warning>大概意思就是我们使用管理员权限,可能会导致我们权限损坏建议我们使用虚拟环境
+    <br>那我们使用下面的命令
+   </to_solve_warning>
+   <br>
+   <code>pip3 install jetson-stats</code>
+   <br>
+   然后输入 jtop检测是不是安装上
+   <br>
+   如果出现下面的页面就是安装成功
+   <img src="../image/image copy 4.png">
+   接下来安装 Jetpack
+   
+
+
+
+
 
 
 
